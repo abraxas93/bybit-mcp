@@ -1,7 +1,3 @@
-export * from './add-two-numbers.js';
-export * from './echo.js';
-export * from './get-time.js';
-
 // Market tools
 export * from './market/get-instruments-info.js';
 export * from './market/get-orderbook.js';

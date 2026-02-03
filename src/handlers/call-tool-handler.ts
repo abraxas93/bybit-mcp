@@ -3,9 +3,6 @@ import {
   CallToolResult,
 } from '@modelcontextprotocol/sdk/types.js';
 import { IContainer } from '../container/index.js';
-import echo from '../tools/echo.js';
-import addTwoNumbers from '../tools/add-two-numbers.js';
-import getTime from '../tools/get-time.js';
 import getInstrumentsInfo from '../tools/market/get-instruments-info.js';
 import getOrderbook from '../tools/market/get-orderbook.js';
 import getTickers from '../tools/market/get-tickers.js';
@@ -30,15 +27,6 @@ export async function handleToolCall(
   const { name, arguments: args } = request.params;
 
   switch (name) {
-    case 'echo':
-      return echo.call(this, args);
-
-    case 'add':
-      return addTwoNumbers.call(this, args);
-
-    case 'get_time':
-      return getTime.call(this, args);
-
     case 'get_instruments_info':
       return await getInstrumentsInfo.call(this, args);
 

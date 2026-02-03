@@ -1,8 +1,5 @@
 import { ListToolsRequest, Tool } from '@modelcontextprotocol/sdk/types.js';
 import {
-  ECHO_TOOL,
-  ADD_TWO_NUMBERS_TOOL,
-  GET_TIME_TOOL,
   GET_INSTRUMENTS_INFO_TOOL,
   GET_ORDERBOOK_TOOL,
   GET_TICKERS_TOOL,
@@ -26,9 +23,6 @@ export async function handleListTools(
 ): Promise<{ tools: Tool[] }> {
   return {
     tools: [
-      ECHO_TOOL,
-      ADD_TWO_NUMBERS_TOOL,
-      GET_TIME_TOOL,
       GET_INSTRUMENTS_INFO_TOOL,
       GET_ORDERBOOK_TOOL,
       GET_TICKERS_TOOL,
