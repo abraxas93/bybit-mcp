@@ -14,7 +14,7 @@ export async function startServer(handlers: IServerHandlers): Promise<Server> {
   // Create the server instance
   const server = new Server(
     {
-      name: 'simple-mcp-server',
+      name: 'bybit-mcp-server',
       version: '1.0.0',
     },
     {

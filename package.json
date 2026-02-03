@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.18.2",
+    "bybit-api": "^4.5.1",
     "cross-env": "^10.0.0",
     "dotenv": "^17.2.2",
     "tslib": "^2.8.1",
